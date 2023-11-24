@@ -41,19 +41,37 @@ height: auto;
 .pic{
 width: 100%;
 }
-.div-2{
-   float: right;
-   width:7vw;
+#DD{
+   width: 96vw;
+   height:16vw;
    position: static;
+   display: flex;
 }
-nav{
-   display: block;
-  color:black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  float: left;
-}
+ul{
+    list-style-type: none;
+    width: 7vw;
+    height: 7vw;
+    overflow: hidden;
+   }
+   li {
+    text-decoration: none;
+    display:block;
+    background-color:lightcoral;
+    color: black;
+    padding: 8px 12px;
+    text-align: center;
+   }
+   li{
+    float:right;
+   }
+   li.active{
+    background-color:lightseagreen;
+    color: white;
+   }
+   li:hover:not(.active){
+    background-color:lightslategray;
+    color: white;
+   }
    </style>
 
 </head>
@@ -61,14 +79,16 @@ nav{
       <div id="div-1">
              Dreamy World <br>
              </div>
+             <div id="DD">
     <div class="ASD"><img src="logo.png"alt="task-6"class="pic"/></div>
-    <div class="div-2">
-      <nav>Home</nav>
-      <nav>About</nav>
-      <nav>Contact Us</nav>
-      <nav>Details</nav>
-      <nav>Search</nav>
-    </div>
-
+    <div style="float: right">
+    <ul>
+      <li class="active">Home</li>
+      <li>About</li>
+      <li>Contact Us</li>
+      <li>Details</li>
+      <li>Search</li>
+    </ul></div>
+</div>
 </body>
 </html>
