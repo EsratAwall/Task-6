@@ -37,14 +37,43 @@ height: auto;
    height:7vw;
    width:98vw;
    margin: auto;
-   background-color:lawngreen;
+   position: static;
 
 }
 .AS{
    height: 7vw;
-   width: 7vw;
+   width: 8vw;
    position: static;
+   margin-top: 0.5vw;
+   padding-right: 45vw;
 }
+ .SS{
+   float: right;
+   width: 40vw;
+   height: 6vw;
+   position: static;
+   
+ }  
+ .LL{
+   list-style-type:none;
+   padding: 1vw;
+ }
+ li{
+   text-decoration: none;
+   display: block;
+   color: black;
+   float: right;
+   padding: 1vw;
+   margin: 0.5vw;
+ }
+ li.active{
+  background-color:seagreen;
+  color: white;
+ }
+ li:hover:not(.active){
+background-color:seagreen;
+color: white;
+ }
    </style>
 
 </head>
@@ -54,7 +83,17 @@ height: auto;
              </div>
   <div class="AA">
   <div class="AS"><img src="logo.png"alt="task-6"style="width:100% "/></div>
-
+<div class="SS">
+<ul class="LL">
+   <li>search</li>
+   <li>Service</li>
+   <li>Details</li>
+   <li>Contact Us</li>
+   <li>About</li>
+   <li class="active">Home</li>
+   
+</ul>
+</div>
   </div>
 </body>
 </html>
